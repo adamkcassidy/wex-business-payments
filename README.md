@@ -8,7 +8,7 @@ Design reference: [Figma — WEX Business Payments](https://www.figma.com/design
 
 - [React](https://react.dev) + TypeScript, built with [Vite](https://vite.dev)
 - [Tailwind CSS v4](https://tailwindcss.com)
-- [shadcn/ui](https://ui.shadcn.com) (Radix) — Gray neutrals, Indigo primary
+- [shadcn/ui](https://ui.shadcn.com) (Radix) — theme tokens kept 1:1 with the [shadcn Figma library](https://www.shadcndesign.com/docs) (Neutral)
 - [Lucide](https://lucide.dev) icons
 - [Inter](https://rsms.me/inter/) via Fontsource
 - [React Router](https://reactrouter.com)
