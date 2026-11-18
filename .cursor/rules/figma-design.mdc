@@ -1,0 +1,35 @@
+---
+description: How to build screens in Figma (WBP file) so they stay on-system and translate to code
+alwaysApply: true
+---
+
+# Designing in Figma
+
+Applies to any screen work in the WBP file (`D3M4T3EIULiiFPjIQKoRYI`). Use the `build-figma-screen` skill for the step-by-step workflow.
+
+## Use what exists; flag what doesn't
+
+- Build from WEX UI Kit components (shadcn) and WEX Brand Assets. Don't draw a frame that imitates a kit component.
+- If a screen needs something the kit lacks (a component, a variant, a prop), or a kit component has to be detached or restyled, **stop and flag it** before building: what's missing, the closest kit option, and a proposed approach. Never quietly build a custom version.
+- Log every flag in `docs/design/deviations.md` so we can decide: use the kit option, add it to the kit, or keep it local.
+
+## Build it the way code would
+
+- Auto layout on every frame. Absolute positioning only for true overlays (toasts, floating badges), with the reason in the layer name or a flag.
+- Sizing mirrors CSS: Fill for flex-1/full-width, Hug for content-sized, Fixed only where code would fix it (sidebar 256px, header 56px).
+- Spacing and radius bound to kit variables (`spacing/*`, `border-radius/*`); no off-scale values.
+- Text uses kit text styles. No free-standing font settings.
+- Name layers by role (`Filters`, `Cards table`, `Row actions`), never `Frame 123`.
+- Repeated UI is one component with instances. Screen-specific components live in the WBP file until promoted to the kit.
+- Realistic content from `docs/design/` (glossary, statuses, mock data), not lorem ipsum.
+
+## Semantic tokens, applied by meaning
+
+- Colors come only from the "3. Mode" collection (background, text, border, focus-ring, sidebar, chart, status). Never `wex colors/*`, `tailwind colors/*`, or hex on screens. Logo colors come from Brand Assets.
+- Pick the token for what the element *is*, not how it looks: secondary copy is `text/muted-foreground` even if another gray looks closer.
+- When no token fits, or the meaning is ambiguous (muted panel vs. card, info vs. neutral status), ask instead of picking. Record the answer in `docs/design/decisions.md`.
+- Every screen works in Light and Dark (set via the Mode collection on the frame). Check both.
+
+## Before calling a screen done
+
+Run `scripts/figma/audit-screen.js` on it (see the skill), fix or flag every finding, and screenshot Light and Dark.

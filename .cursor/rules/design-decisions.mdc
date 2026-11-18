@@ -1,0 +1,21 @@
+---
+description: Record and follow product design decisions in docs/design
+alwaysApply: true
+---
+
+# Design decisions
+
+`docs/design/` is the record of how this product looks, reads, and behaves. Read the relevant file before designing or building something, and follow it.
+
+| File | Holds |
+|---|---|
+| `decisions.md` | Dated decision log: what we chose, why, and what it rules out |
+| `deviations.md` | Places where a screen departs from the UI Kit, and their status |
+| `writing.md` | Voice, capitalization, terminology rules, and copy patterns (buttons, errors, empty states) |
+| `patterns.md` | Interaction patterns, workflows, and behaviors (tables, filters, bulk actions, forms, confirmations) |
+| `statuses.md` | Every status shown in the product: label, meaning, badge token, and when it applies |
+| `glossary.md` | Domain terms and their definitions (Customer, Account, Cardholder, …) |
+
+- When a conversation settles a question (a label, a behavior, a status, a layout pattern), add it to the right file in the same turn and tell the user what you recorded.
+- Don't record guesses as decisions. Mark unconfirmed entries **Proposed**; only the user moves them to **Decided**.
+- If something you're about to do conflicts with a recorded decision, say so instead of overriding it.
