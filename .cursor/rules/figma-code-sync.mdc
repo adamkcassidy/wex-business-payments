@@ -1,0 +1,31 @@
+---
+description: Keep code and the WEX Figma libraries in sync (tokens, components, brand assets)
+alwaysApply: true
+---
+
+# Figma ↔ code sync
+
+Code and Figma must match. Code is the source of truth for behavior; the Figma libraries are where design decisions (tokens, component styling) get made first.
+
+## Figma files
+
+| File | fileKey | Holds |
+|------|---------|-------|
+| WEX shadcn UI Kit | `fnEkt5u9OYBlzOTEXoWuan` | Variables (palette, semantic light/dark tokens, radius, fonts) and shadcn components |
+| CP Brand Library | `VQOanmkay93nHFU64deRx0` | Logos, card art, brand colors (`--cp-brand-*`), gradients |
+| WBP screens | `D3M4T3EIULiiFPjIQKoRYI` | Screen designs only; not a source for tokens |
+
+## Theme tokens
+
+- `src/styles/theme.css` is generated. Never edit it by hand.
+- To sync: pass the contents of `scripts/figma/generate-theme-css.js` to the Figma MCP `use_figma` tool (fileKey `fnEkt5u9OYBlzOTEXoWuan`), write the returned string to `src/styles/theme.css` verbatim, then `npm run build`.
+- The generator throws on any token it can't resolve; fix the variable in Figma rather than patching the output.
+- Only "3. Mode" variables with WEB code syntax (`var(--name)`) become CSS tokens. `alpha/*` and `custom/*` are Figma helpers; use opacity modifiers in code (`bg-primary/5`).
+- If a token needs changing, change it in Figma and regenerate. If code needs a new token, add it to the UI Kit first.
+- Fonts in the generated CSS must have matching Fontsource imports in `src/index.css`.
+
+## Components
+
+- Use semantic tokens (`bg-primary`, `text-muted-foreground`, `border-border`), never raw palette classes (`bg-wex-blue-700`) or hex values in components.
+- When adding or changing a shadcn component, compare it against the UI Kit component (`get_design_context` / `get_screenshot`) and note any intentional differences to the user.
+- Icons: Lucide only.

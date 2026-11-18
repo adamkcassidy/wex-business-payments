@@ -1,0 +1,341 @@
+/*
+ * GENERATED from the WEX shadcn UI Kit (Figma file fnEkt5u9OYBlzOTEXoWuan).
+ * Do not edit by hand: change the Figma variables, then rerun
+ * scripts/figma/generate-theme-css.js and replace this file.
+ */
+
+@theme static {
+  --color-wex-gray-50: #f9f9fe;
+  --color-wex-gray-100: #f2f4fc;
+  --color-wex-gray-200: #e3e7f5;
+  --color-wex-gray-300: #cdd3e8;
+  --color-wex-gray-400: #96a0c2;
+  --color-wex-gray-500: #667196;
+  --color-wex-gray-600: #4b536e;
+  --color-wex-gray-700: #393f56;
+  --color-wex-gray-800: #242839;
+  --color-wex-gray-900: #141725;
+  --color-wex-gray-950: #050612;
+  --color-wex-blue-50: #eef2ff;
+  --color-wex-blue-100: #dfe7ff;
+  --color-wex-blue-200: #c5d3fe;
+  --color-wex-blue-300: #a2b5fc;
+  --color-wex-blue-400: #798ef9;
+  --color-wex-blue-500: #5869f2;
+  --color-wex-blue-600: #444ae6;
+  --color-wex-blue-700: #393ccb;
+  --color-wex-blue-800: #3030a8;
+  --color-wex-blue-900: #2e2a8b;
+  --color-wex-blue-950: #25146f;
+  --color-wex-red-50: #fef2f3;
+  --color-wex-red-100: #fee2e4;
+  --color-wex-red-200: #fecace;
+  --color-wex-red-300: #fba4ab;
+  --color-wex-red-400: #f7707b;
+  --color-wex-red-500: #e4404f;
+  --color-wex-red-600: #c8102e;
+  --color-wex-red-700: #ac1027;
+  --color-wex-red-800: #901624;
+  --color-wex-red-900: #7a1b24;
+  --color-wex-red-950: #440b10;
+  --font-sans: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Georgia', ui-serif, serif;
+  --font-mono: 'Roboto Mono Variable', 'Roboto Mono', ui-monospace, monospace;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --radius: 0.5rem;
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.25rem;
+  --radius-4xl: 1.5rem;
+}
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --color-background: var(--background);
+  --color-page-muted: var(--page-muted);
+  --color-card: var(--card);
+  --color-popover: var(--popover);
+  --color-muted: var(--muted);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-primary: var(--primary);
+  --color-destructive: var(--destructive);
+  --color-success-background: var(--success-background);
+  --color-info-background: var(--info-background);
+  --color-warning-background: var(--warning-background);
+  --color-destructive-background: var(--destructive-background);
+  --color-badge-success: var(--badge-success);
+  --color-badge-warning: var(--badge-warning);
+  --color-badge-info: var(--badge-info);
+  --color-badge-red: var(--badge-red);
+  --color-badge-orange: var(--badge-orange);
+  --color-badge-amber: var(--badge-amber);
+  --color-badge-yellow: var(--badge-yellow);
+  --color-badge-lime: var(--badge-lime);
+  --color-badge-green: var(--badge-green);
+  --color-badge-emerald: var(--badge-emerald);
+  --color-badge-teal: var(--badge-teal);
+  --color-badge-cyan: var(--badge-cyan);
+  --color-badge-sky: var(--badge-sky);
+  --color-badge-blue: var(--badge-blue);
+  --color-badge-indigo: var(--badge-indigo);
+  --color-badge-violet: var(--badge-violet);
+  --color-badge-purple: var(--badge-purple);
+  --color-badge-fuchsia: var(--badge-fuchsia);
+  --color-badge-pink: var(--badge-pink);
+  --color-badge-rose: var(--badge-rose);
+  --color-foreground: var(--foreground);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-link: var(--link);
+  --color-success: var(--success);
+  --color-info: var(--info);
+  --color-warning: var(--warning);
+  --color-badge-success-foreground: var(--badge-success-foreground);
+  --color-badge-warning-foreground: var(--badge-warning-foreground);
+  --color-badge-info-foreground: var(--badge-info-foreground);
+  --color-badge-red-foreground: var(--badge-red-foreground);
+  --color-badge-orange-foreground: var(--badge-orange-foreground);
+  --color-badge-amber-foreground: var(--badge-amber-foreground);
+  --color-badge-yellow-foreground: var(--badge-yellow-foreground);
+  --color-badge-lime-foreground: var(--badge-lime-foreground);
+  --color-badge-green-foreground: var(--badge-green-foreground);
+  --color-badge-emerald-foreground: var(--badge-emerald-foreground);
+  --color-badge-teal-foreground: var(--badge-teal-foreground);
+  --color-badge-cyan-foreground: var(--badge-cyan-foreground);
+  --color-badge-sky-foreground: var(--badge-sky-foreground);
+  --color-badge-blue-foreground: var(--badge-blue-foreground);
+  --color-badge-indigo-foreground: var(--badge-indigo-foreground);
+  --color-badge-violet-foreground: var(--badge-violet-foreground);
+  --color-badge-purple-foreground: var(--badge-purple-foreground);
+  --color-badge-fuchsia-foreground: var(--badge-fuchsia-foreground);
+  --color-badge-pink-foreground: var(--badge-pink-foreground);
+  --color-badge-rose-foreground: var(--badge-rose-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-success-border: var(--success-border);
+  --color-info-border: var(--info-border);
+  --color-warning-border: var(--warning-border);
+  --color-destructive-border: var(--destructive-border);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+:root {
+  /* background */
+  --background: var(--color-white);
+  --page-muted: var(--color-wex-gray-50);
+  --card: var(--color-white);
+  --popover: var(--color-white);
+  --muted: var(--color-wex-gray-100);
+  --secondary: var(--color-wex-gray-100);
+  --accent: var(--color-wex-blue-50);
+  --primary: var(--color-wex-blue-700);
+  --destructive: var(--color-wex-red-600);
+  --success-background: #ecfdf5;
+  --info-background: #eff6ff;
+  --warning-background: #fffbec;
+  --destructive-background: var(--color-wex-red-50);
+  --badge-success: #d1fae5;
+  --badge-warning: #fff2c8;
+  --badge-info: #dbeafe;
+  --badge-red: #fee2e2;
+  --badge-orange: #ffedd5;
+  --badge-amber: #fef3c7;
+  --badge-yellow: #fef9c3;
+  --badge-lime: #ecfccb;
+  --badge-green: #dcfce7;
+  --badge-emerald: #d1fae5;
+  --badge-teal: #ccfbf1;
+  --badge-cyan: #cffafe;
+  --badge-sky: #e0f2fe;
+  --badge-blue: #dbeafe;
+  --badge-indigo: #e0e7ff;
+  --badge-violet: #ede9fe;
+  --badge-purple: #f3e8ff;
+  --badge-fuchsia: #fae8ff;
+  --badge-pink: #fce7f3;
+  --badge-rose: #ffe4e6;
+
+  /* text */
+  --foreground: var(--color-wex-gray-800);
+  --card-foreground: var(--color-wex-gray-800);
+  --popover-foreground: var(--color-wex-gray-800);
+  --muted-foreground: var(--color-wex-gray-600);
+  --secondary-foreground: var(--color-wex-gray-800);
+  --accent-foreground: var(--color-wex-gray-800);
+  --primary-foreground: var(--color-white);
+  --destructive-foreground: var(--color-white);
+  --link: var(--color-wex-blue-700);
+  --success: #047857;
+  --info: #1d4ed8;
+  --warning: #b75007;
+  --badge-success-foreground: #065f46;
+  --badge-warning-foreground: #953d0e;
+  --badge-info-foreground: #1e40af;
+  --badge-red-foreground: #991b1b;
+  --badge-orange-foreground: #9a3412;
+  --badge-amber-foreground: #92400e;
+  --badge-yellow-foreground: #854d0e;
+  --badge-lime-foreground: #3f6212;
+  --badge-green-foreground: #166534;
+  --badge-emerald-foreground: #065f46;
+  --badge-teal-foreground: #115e59;
+  --badge-cyan-foreground: #155e75;
+  --badge-sky-foreground: #075985;
+  --badge-blue-foreground: #1e40af;
+  --badge-indigo-foreground: #3730a3;
+  --badge-violet-foreground: #5b21b6;
+  --badge-purple-foreground: #6b21a8;
+  --badge-fuchsia-foreground: #86198f;
+  --badge-pink-foreground: #9d174d;
+  --badge-rose-foreground: #9f1239;
+
+  /* border */
+  --border: var(--color-wex-gray-200);
+  --input: var(--color-wex-gray-300);
+  --success-border: #6ee7b7;
+  --info-border: #93c5fd;
+  --warning-border: #ffd150;
+  --destructive-border: var(--color-wex-red-300);
+
+  /* focus-ring */
+  --ring: var(--color-wex-blue-700);
+
+  /* sidebar */
+  --sidebar: var(--color-white);
+  --sidebar-primary-foreground: var(--color-white);
+  --sidebar-foreground: var(--color-wex-gray-800);
+  --sidebar-primary: var(--color-wex-blue-700);
+  --sidebar-accent: var(--color-wex-blue-50);
+  --sidebar-accent-foreground: var(--color-wex-gray-800);
+  --sidebar-border: var(--color-wex-gray-200);
+  --sidebar-ring: var(--color-wex-blue-700);
+
+  /* chart */
+  --chart-1: var(--color-orange-600);
+  --chart-2: var(--color-teal-600);
+  --chart-3: var(--color-cyan-900);
+  --chart-4: var(--color-amber-400);
+  --chart-5: var(--color-amber-500);
+}
+
+.dark {
+  /* background */
+  --background: var(--color-wex-gray-900);
+  --page-muted: var(--color-wex-gray-950);
+  --card: var(--color-wex-gray-900);
+  --popover: var(--color-wex-gray-900);
+  --muted: var(--color-wex-gray-950);
+  --secondary: var(--color-wex-gray-800);
+  --accent: color-mix(in srgb, #798ef9 16.08%, transparent);
+  --primary: var(--color-wex-blue-600);
+  --destructive: var(--color-wex-red-400);
+  --success-background: #133e3b;
+  --info-background: #1d3157;
+  --warning-background: #4c3e1c;
+  --destructive-background: #46212f;
+  --badge-success: color-mix(in srgb, #10b981 16%, transparent);
+  --badge-warning: color-mix(in srgb, #ffbb00 16%, transparent);
+  --badge-info: color-mix(in srgb, #3b82f6 16%, transparent);
+  --badge-red: color-mix(in srgb, #ef4444 16%, transparent);
+  --badge-orange: color-mix(in srgb, #f97316 16%, transparent);
+  --badge-amber: color-mix(in srgb, #f59e0b 16%, transparent);
+  --badge-yellow: color-mix(in srgb, #eab308 16%, transparent);
+  --badge-lime: color-mix(in srgb, #84cc16 16%, transparent);
+  --badge-green: color-mix(in srgb, #22c55e 16%, transparent);
+  --badge-emerald: color-mix(in srgb, #10b981 16%, transparent);
+  --badge-teal: color-mix(in srgb, #14b8a6 16%, transparent);
+  --badge-cyan: color-mix(in srgb, #06b6d4 16%, transparent);
+  --badge-sky: color-mix(in srgb, #0ea5e9 16%, transparent);
+  --badge-blue: color-mix(in srgb, #3b82f6 16%, transparent);
+  --badge-indigo: color-mix(in srgb, #6366f1 16%, transparent);
+  --badge-violet: color-mix(in srgb, #8b5cf6 16%, transparent);
+  --badge-purple: color-mix(in srgb, #a855f7 16%, transparent);
+  --badge-fuchsia: color-mix(in srgb, #d946ef 16%, transparent);
+  --badge-pink: color-mix(in srgb, #ec4899 16%, transparent);
+  --badge-rose: color-mix(in srgb, #f43f5e 16%, transparent);
+
+  /* text */
+  --foreground: var(--color-white);
+  --card-foreground: var(--color-white);
+  --popover-foreground: var(--color-white);
+  --muted-foreground: var(--color-wex-gray-300);
+  --secondary-foreground: var(--color-white);
+  --accent-foreground: var(--color-white);
+  --primary-foreground: var(--color-white);
+  --destructive-foreground: var(--color-white);
+  --link: var(--color-wex-blue-400);
+  --success: #34d399;
+  --info: #60a5fa;
+  --warning: #ffbb00;
+  --badge-success-foreground: #6ee7b7;
+  --badge-warning-foreground: #ffd150;
+  --badge-info-foreground: #93c5fd;
+  --badge-red-foreground: #fca5a5;
+  --badge-orange-foreground: #fdba74;
+  --badge-amber-foreground: #fcd34d;
+  --badge-yellow-foreground: #fde047;
+  --badge-lime-foreground: #bef264;
+  --badge-green-foreground: #86efac;
+  --badge-emerald-foreground: #6ee7b7;
+  --badge-teal-foreground: #5eead4;
+  --badge-cyan-foreground: #67e8f9;
+  --badge-sky-foreground: #7dd3fc;
+  --badge-blue-foreground: #93c5fd;
+  --badge-indigo-foreground: #a5b4fc;
+  --badge-violet-foreground: #c4b5fd;
+  --badge-purple-foreground: #d8b4fe;
+  --badge-fuchsia-foreground: #f0abfc;
+  --badge-pink-foreground: #f9a8d4;
+  --badge-rose-foreground: #fda4af;
+
+  /* border */
+  --border: var(--color-wex-gray-700);
+  --input: var(--color-wex-gray-600);
+  --success-border: #0d5747;
+  --info-border: #1d3d88;
+  --warning-border: #784614;
+  --destructive-border: #6e142a;
+
+  /* focus-ring */
+  --ring: var(--color-wex-blue-400);
+
+  /* sidebar */
+  --sidebar: var(--color-wex-gray-900);
+  --sidebar-primary-foreground: var(--color-white);
+  --sidebar-foreground: var(--color-white);
+  --sidebar-primary: var(--color-wex-blue-600);
+  --sidebar-accent: color-mix(in srgb, #798ef9 16.08%, transparent);
+  --sidebar-accent-foreground: var(--color-white);
+  --sidebar-border: var(--color-wex-gray-700);
+  --sidebar-ring: var(--color-wex-blue-400);
+
+  /* chart */
+  --chart-1: var(--color-blue-700);
+  --chart-2: var(--color-emerald-500);
+  --chart-3: var(--color-amber-500);
+  --chart-4: var(--color-purple-500);
+  --chart-5: var(--color-rose-500);
+}
