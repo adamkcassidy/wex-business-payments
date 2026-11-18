@@ -1,0 +1,13 @@
+---
+description: How third-party skills (nudge, better-*, interface-review, state-machine) apply in this project
+alwaysApply: true
+---
+
+# Third-party skills
+
+Third-party skills in `.cursor/skills/` (see its README) give general design and code guidance. This project's own choices override their defaults.
+
+- Recorded **Decided** entries in `docs/design/` and the rules in `.cursor/rules/` win over a third-party skill's advice. A review finding that only contradicts a decided entry is not a finding. Mention it as a question if it seems worth revisiting.
+- Tokens come from the WEX UI Kit and are generated into `src/styles/theme.css`. Never convert notation (hex to OKLCH, for example) or add tokens in code on a skill's advice; propose the change in Figma instead.
+- When a third-party skill's guidance keeps proving right for this product, propose adding it to `docs/design/` as a **Proposed** entry so it becomes ours.
+- Don't edit third-party skill files. Tailor behavior through `docs/design/` and our own rules and skills.

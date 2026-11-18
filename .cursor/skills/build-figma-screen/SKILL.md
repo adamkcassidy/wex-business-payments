@@ -29,7 +29,8 @@ Pass both library keys as `includeLibraryKeys` on every `search_design_system` c
 5. **Assemble section by section** with auto layout. Bind spacing, radius, and colors to kit variables, and apply kit text styles. Override text through component properties.
 6. **Audit.** Copy `scripts/figma/audit-screen.js`, set `ROOT_IDS` to the new frame IDs, and run it with `use_figma`. Fix every finding, or flag it as a deviation if it's intentional.
 7. **Check both modes.** Screenshot the frame with the Mode collection set to Light, then to Dark.
-8. **Report back.** Include the screenshots, the components used, any deviations (also logged in `docs/design/deviations.md`), and open token or pattern questions. Record anything the user settles in `docs/design/`.
+8. **Review.** When the user asks for a critique, use `nudge` on the screenshots, and treat `docs/design/` decisions as settled.
+9. **Report back.** Include the screenshots, the components used, any deviations (also logged in `docs/design/deviations.md`), and open token or pattern questions. Record anything the user settles in `docs/design/`.
 
 ## Audit findings and what to do
 

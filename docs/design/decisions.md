@@ -2,6 +2,14 @@
 
 Newest first. Each entry: what we chose, why, and what it rules out.
 
+## 2026-11-17 — Mock data persona: Acme Inc. and Adam Cassidy
+
+**Decided.** The customer is Acme Inc., with accounts like "Acme Inc. - North America". The signed-in user is Adam Cassidy (adam.cassidy@acmeinc.com). The Figma shell still shows Globex Organization Group and Alexandria Baker, and gets updated when screens are built.
+
+## 2026-11-17 — Third-party skills are tools; our docs are the standard
+
+**Decided.** Shift Nudge (`nudge`) and Jakub Krehel's review skills are installed unchanged in `.cursor/skills/`. Where they disagree with a decided entry here, this file wins (see `.cursor/rules/third-party-skills.mdc`).
+
 ## 2026-11-17 — Design screens in Figma first
 
 **Decided.** New screens are explored in Figma before they're built in code. Code follows once a direction settles. The Figma nav (My cards, Quick cards, Corporate cards, Users, Payment history, Upload history, …) is newer than the code nav.
@@ -29,7 +37,3 @@ Newest first. Each entry: what we chose, why, and what it rules out.
 ## 2026-11-17 — No Code Connect; point component descriptions at this repo
 
 **Proposed.** Code Connect isn't available on the current Figma plan, and no mappings exist. Instead, each component description ends with a `Code:` line linking to its file in this repo. This replaces the old links to the private `wex-gts` repos.
-
-## Open questions
-
-- **Mock data persona:** the Figma screens use Globex Organization Group and Alexandria Baker, while the code uses Acme Inc. and Adam Cassidy. Pick one set and use it everywhere.
