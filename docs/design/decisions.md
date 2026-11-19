@@ -2,6 +2,19 @@
 
 Newest first. Each entry: what we chose, why, and what it rules out.
 
+## 2026-11-18 — Users and roles: four standard roles, one per user
+
+**Decided.** Users belong to the Customer, and there's one user list per customer. Each user has exactly one role:
+
+- **Admin:** everything, including users, settings and spend controls.
+- **Card and payment manager:** issues and manages cards, pays suppliers, and resolves declines and exceptions. No access to users or settings.
+- **Finance:** views spend, statements, rebates and reports, and pays statements. Can't issue cards or payments.
+- **Cardholder:** sees and manages only their own cards, transactions, PIN and disputes.
+
+Access is set separately from the role: which accounts a user can see, and for Card and payment managers, optionally which departments. Custom roles aren't in the prototype; the case study notes that Implementation handles the rare exceptions.
+
+Why: EnCompass offered roughly 300 individually listed permissions in internal terms (many of them one per report), let users hold several roles, and let users be created at both the Org Group and Org levels. Customers stacked roles and made near-copies ("Program Admin 2") to express where and whose, not just what, and nobody could easily see who had access to what. Research suggested about 80% of customers fit a common set of standard roles. Rules out stacked roles and permission-by-permission role building.
+
 ## 2026-11-18 — Customer structure: WEX → Customer → Account
 
 **Decided.** The product has two levels. A Customer is the business with the WEX relationship. An Account holds one credit line, one currency and one statement. Customers split accounts however they need to, by legal entity, by region or another way. Every feature lives at one of these two levels, never "sometimes one, sometimes the other." Cards and payments are created in the same Account that holds their credit line.

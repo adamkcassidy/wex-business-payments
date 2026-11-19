@@ -23,4 +23,7 @@ Not decided yet. The "Issue a virtual card" flow will set this.
 
 ## Permissions and roles
 
-Not decided yet. To cover: what admins and cardholders see, and whether missing permissions hide or disable controls.
+- **Decided:** a user's access has three parts, set separately. The role sets what they can do. Account access sets where, either some accounts or all of them. Department access, for Card and payment managers only, optionally narrows which cards and people they see. See the 2026-11-18 roles entry in `decisions.md`.
+- **Proposed:** what sensitive data each role sees, such as full card numbers, is a fixed default for that role, not a separate setting.
+
+Still to decide: whether controls a user can't use are hidden or disabled.
