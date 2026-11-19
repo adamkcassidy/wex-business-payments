@@ -4,6 +4,13 @@
 
 Not decided yet.
 
+**Open:** reconcile the Proposed entries below with the WEX brand writing guide (private reference). The guide differs on three points:
+- It bans contractions.
+- It spells out dates in sentences.
+- It capitalizes page and tab names when text refers to them.
+
+Decide where the product follows the guide and where it intentionally differs.
+
 ## Mechanics
 
 - **Proposed:** sentence case for every label, button, heading and menu item ("Issue virtual card", not "Issue Virtual Card").

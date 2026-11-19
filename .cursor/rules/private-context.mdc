@@ -1,0 +1,13 @@
+---
+description: Use the gitignored private/ folder for confidential context without leaking it
+alwaysApply: true
+---
+
+# Private context
+
+`private/` holds confidential reference material: WEX brand guides, EnCompass personas, and user guides. It is gitignored. Read `private/README.md` for the index.
+
+- Use it when the work needs product background: roles, workflows, terminology, voice.
+- Anything that ends up in a tracked file, a commit message, Figma, or the case study must be in our own words, generalized, and fictionalized. Don't quote it, copy tables, or name real customers, financial institutions, or internal systems.
+- Never move, copy, or summarize its contents into a tracked path, and never un-ignore the folder. If a summary is useful, put it in `private/`.
+- If unsure whether something derived from it can be public, ask.
