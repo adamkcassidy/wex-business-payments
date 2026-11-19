@@ -23,7 +23,8 @@ Not decided yet. The "Issue a virtual card" flow will set this.
 
 ## Permissions and roles
 
-- **Decided:** a user's access has three parts, set separately. The role sets what they can do. Account access sets where, either some accounts or all of them. Department access, for Card and payment managers only, optionally narrows which cards and people they see. See the 2026-11-18 roles entry in `decisions.md`.
+- **Decided:** a user's access has three parts, set separately. The role sets what they can do; for managers, that includes which products they manage. Account access sets where, either some accounts or all of them. Department access, for managers only, optionally narrows which cards and people they see.
+- **Decided:** the product follows what the account has turned on. Navigation, dashboard widgets, reports, statements and the role picker only show Cards or Payments when that product is on. See the 2026-11-18 roles entry in `decisions.md`.
 - **Proposed:** what sensitive data each role sees, such as full card numbers, is a fixed default for that role, not a separate setting.
 
 Still to decide: whether controls a user can't use are hidden or disabled.

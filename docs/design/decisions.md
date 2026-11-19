@@ -2,16 +2,26 @@
 
 Newest first. Each entry: what we chose, why, and what it rules out.
 
+## 2026-11-18 — Products are turned on per account
+
+**Decided.** The products are Cards (virtual cards, with physical cards as an option) and Payments (bill pay and supplier payments). Each account has one or both turned on, alongside its currency and credit line. "All accounts" shows everything turned on in any of the customer's accounts.
+
+Products a customer doesn't use are hidden everywhere: navigation, dashboard widgets, reports, statements and the role picker. Cardholder exists only when Cards is on. A single "Explore products" entry for upselling may come later.
+
+Why: customers already use WEX for cards only, payments only, or both. Competitors gate features the same way: Brex hides banking-only roles when a customer has no business account. Rules out showing unused products as disabled.
+
 ## 2026-11-18 — Users and roles: four standard roles, one per user
 
 **Decided.** Users belong to the Customer, and there's one user list per customer. Each user has exactly one role:
 
 - **Admin:** everything, including users, settings and spend controls.
-- **Card and payment manager:** issues and manages cards, pays suppliers, and resolves declines and exceptions. No access to users or settings.
-- **Finance:** views spend, statements, rebates and reports, and pays statements. Can't issue cards or payments.
+- **Manager:** issues and manages cards, pays suppliers, and resolves declines and exceptions, for the products they're set to manage. No access to users or settings. The role is shown by what it manages: **Card manager**, **Payment manager**, or **Card and payment manager**. The "Manages" setting only appears when an account has both products.
+- **Finance manager:** views spend, statements, rebates and reports, and pays statements. Can't issue cards or payments.
 - **Cardholder:** sees and manages only their own cards, transactions, PIN and disputes.
 
-Access is set separately from the role: which accounts a user can see, and for Card and payment managers, optionally which departments. Custom roles aren't in the prototype; the case study notes that Implementation handles the rare exceptions.
+Access is set separately from the role: which accounts a user can see, and for managers, optionally which departments.
+
+Role names follow how competitors name roles, as people rather than teams (Ramp, Brex, BILL, Rho), and avoid clashing with department names like "Finance." One manager role with a product setting, instead of separate Card manager and Payment manager roles, keeps one role per user without forcing someone who does both into Admin. It follows Ramp's approach of a base role plus product capabilities. Custom roles aren't in the prototype; the case study notes that Implementation handles the rare exceptions.
 
 Why: EnCompass offered roughly 300 individually listed permissions in internal terms (many of them one per report), let users hold several roles, and let users be created at both the Org Group and Org levels. Customers stacked roles and made near-copies ("Program Admin 2") to express where and whose, not just what, and nobody could easily see who had access to what. Research suggested about 80% of customers fit a common set of standard roles. Rules out stacked roles and permission-by-permission role building.
 
