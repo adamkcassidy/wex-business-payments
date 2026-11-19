@@ -4,11 +4,19 @@ Newest first. Each entry: what we chose, why, and what it rules out.
 
 ## 2026-11-18 — Customer structure: WEX → Customer → Account
 
-**Decided.** The product has two levels. A Customer is the business with the WEX relationship. An Account holds one credit line, one currency and one statement. Customers split accounts however they need to, by legal entity, by region or another way. Every feature lives at one of these two levels, never "sometimes one, sometimes the other." This replaces EnCompass's Org Group → Orgs → Companies, where features sat at different levels and setups varied by customer.
+**Decided.** The product has two levels. A Customer is the business with the WEX relationship. An Account holds one credit line, one currency and one statement. Customers split accounts however they need to, by legal entity, by region or another way. Every feature lives at one of these two levels, never "sometimes one, sometimes the other." Cards and payments are created in the same Account that holds their credit line.
+
+Why: EnCompass, and WBP after it, used Org Group → Orgs → Companies. Users viewed at the Org Group or Org level and created cards and payments at the Org level, but credit lines, currencies and statements mostly sat on Companies below that. An Org could have several Companies in different currencies, so Org-level spend and available credit had no clean answer. Setups also varied: some customers had no Org Group, and large partners with thousands of their own customers were set up as a single Org Group, so the tiers meant different things for different customers. Most direct customers have fewer than 10 Orgs or Companies, and many have one.
+
+## 2026-11-18 — Migrating the old structure; single-account customers
+
+**Proposed.** Each old Company with its own credit line becomes an Account. An old Org that only grouped cards or people, without separate credit, becomes a Department. Customers with one account never see the hierarchy: no account switcher and no "All accounts" option.
 
 ## 2026-11-18 — "All accounts" view for multi-account admins
 
 **Decided.** Admins with access to more than one account can pick "All accounts" in the account switcher. That view rolls up the dashboard, spend, rebates and reports across accounts. Actions such as issuing a card, paying a supplier or changing a limit still happen inside a single account, so the account is always clear. This answers the multi-entity problem: one place to see combined spend and progress toward rebate tiers. Rules out cross-account bulk actions for now.
+
+Open: accounts can use different currencies. How combined totals are shown in "All accounts" isn't decided.
 
 ## 2026-11-18 — Prototype covers direct customers only
 
