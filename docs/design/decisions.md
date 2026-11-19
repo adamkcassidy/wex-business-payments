@@ -16,7 +16,9 @@ Why: EnCompass, and WBP after it, used Org Group → Orgs → Companies. Users v
 
 **Decided.** Admins with access to more than one account can pick "All accounts" in the account switcher. That view rolls up the dashboard, spend, rebates and reports across accounts. Actions such as issuing a card, paying a supplier or changing a limit still happen inside a single account, so the account is always clear. This answers the multi-entity problem: one place to see combined spend and progress toward rebate tiers. Rules out cross-account bulk actions for now.
 
-Open: accounts can use different currencies. How combined totals are shown in "All accounts" isn't decided.
+Creating from "All accounts": the form's first field is the account, and the rest of the form follows that account's currency and limits.
+
+Currencies: combined totals are converted to the customer's base currency and labeled as an estimate, with each account's figure shown in its own currency alongside.
 
 ## 2026-11-18 — Prototype covers direct customers only
 
