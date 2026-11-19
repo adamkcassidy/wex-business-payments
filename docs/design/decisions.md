@@ -2,6 +2,22 @@
 
 Newest first. Each entry: what we chose, why, and what it rules out.
 
+## 2026-11-18 — Customer structure: WEX → Customer → Account
+
+**Decided.** The product has two levels. A Customer is the business with the WEX relationship. An Account holds one credit line, one currency and one statement. Customers split accounts however they need to, by legal entity, by region or another way. Every feature lives at one of these two levels, never "sometimes one, sometimes the other." This replaces EnCompass's Org Group → Orgs → Companies, where features sat at different levels and setups varied by customer.
+
+## 2026-11-18 — "All accounts" view for multi-account admins
+
+**Decided.** Admins with access to more than one account can pick "All accounts" in the account switcher. That view rolls up the dashboard, spend, rebates and reports across accounts. Actions such as issuing a card, paying a supplier or changing a limit still happen inside a single account, so the account is always clear. This answers the multi-entity problem: one place to see combined spend and progress toward rebate tiers. Rules out cross-account bulk actions for now.
+
+## 2026-11-18 — Prototype covers direct customers only
+
+**Decided.** The prototype is built for direct customers. The partner model (Partner → Customer → Accounts) appears in the case study as a diagram, not as screens. The bank or financial-institution layer isn't shown.
+
+## 2026-11-18 — Departments group cards inside an account
+
+**Decided.** Cards and users can have a Department (or cost center). It's a single flat field used for filtering, reporting and approvals, not a tree that admins build. Rules out EnCompass-style nested card hierarchies.
+
 ## 2026-11-17 — Mock data persona: Acme Inc. and Adam Cassidy
 
 **Decided.** The customer is Acme Inc., with accounts like "Acme Inc. - North America". The signed-in user is Adam Cassidy (adam.cassidy@acmeinc.com). The Figma shell still shows Globex Organization Group and Alexandria Baker, and gets updated when screens are built.
