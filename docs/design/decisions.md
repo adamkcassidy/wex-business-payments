@@ -10,7 +10,7 @@ Why: EnCompass, and WBP after it, used Org Group → Orgs → Companies. Users v
 
 ## 2026-11-18 — Migrating the old structure; single-account customers
 
-**Proposed.** Each old Company with its own credit line becomes an Account. An old Org that only grouped cards or people, without separate credit, becomes a Department. Customers with one account never see the hierarchy: no account switcher and no "All accounts" option.
+**Decided.** Each old Company with its own credit line becomes an Account. An old Org that only grouped cards or people, without separate credit, becomes a Department. Customers with one account never see the hierarchy: no account switcher and no "All accounts" option.
 
 ## 2026-11-18 — "All accounts" view for multi-account admins
 

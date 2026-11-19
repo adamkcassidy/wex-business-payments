@@ -8,7 +8,10 @@ How things work, not just how they look. Add a section the first time a pattern 
 
 ## Tables and lists
 
-Not decided yet. The cards list will set this: filters, sorting, row actions, bulk actions, pagination vs. infinite scroll, and density.
+- **Decided:** tables load less by default so pages stay fast. Activity tables (transactions, payments) default to the last 30 days. Inactive records (closed or expired cards, deactivated users) are hidden. Users can change the date range, show inactive records, and change rows per page.
+- **Proposed:** detail views load in sections, so the summary appears first and slower sections fill in.
+
+Still to decide on the cards list: filters, sorting, row actions, bulk actions, and density.
 
 ## Forms and multi-step flows
 
