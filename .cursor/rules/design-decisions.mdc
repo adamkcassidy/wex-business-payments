@@ -16,6 +16,7 @@ alwaysApply: true
 | `statuses.md` | Every status shown in the product: label, meaning, badge token, and when it applies |
 | `glossary.md` | Domain terms and their definitions (Customer, Account, Cardholder, …) |
 
+- `docs/product/foundation.md` summarizes the product: customers, structure, roles, jobs, and goals. Read it before designing a screen or flow, and update it when a decision changes something it says.
 - When a conversation settles a question (a label, a behavior, a status, a layout pattern), add it to the right file in the same turn and tell the user what you recorded.
 - Don't record guesses as decisions. Mark unconfirmed entries **Proposed**; only the user moves them to **Decided**.
 - If something you're about to do conflicts with a recorded decision, say so instead of overriding it.

@@ -11,7 +11,8 @@
 | Admin | A role with full access, including users, settings and spend controls, in the accounts the user can access. | Decided |
 | Manager | A role for daily operations: issuing and managing cards, paying suppliers, and resolving declines and exceptions. Never shown as plain "Manager": it's Card manager, Payment manager, or Card and payment manager, depending on what it manages. Can be limited to certain departments. No access to users or settings. | Decided |
 | Finance manager | A role that views spend, statements, rebates and reports, and pays statements. Can't issue cards or payments. | Decided |
-| Cardholder | A role for someone who has been issued cards. Sees and manages only their own cards, transactions, PIN and disputes. | Decided |
+| Cardholder | A role for people whose only access is their own cards, transactions, PIN and disputes. Users with other roles can hold cards too. A Cardholder's access comes from their cards; there's no account-access setting. | Decided |
+| My cards | The cards issued to the signed-in user. Shown to any user who holds a card, whatever their role. | Decided |
 | Virtual card | A card number issued for online or one-time spend, with no plastic card. | Proposed |
 | Physical card | A plastic card sent to a cardholder. | Proposed |
 | Rebate | Money returned to the customer based on card spend. | Proposed |

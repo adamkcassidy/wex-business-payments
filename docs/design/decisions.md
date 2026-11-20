@@ -2,6 +2,18 @@
 
 Newest first. Each entry: what we chose, why, and what it rules out.
 
+## 2026-11-19 — Every card belongs to a user; cards never move between people
+
+**Decided.** Issuing a card to a person always creates that person as a user (or uses their existing user), and they get an invitation. Someone who never signs in still appears in the user list with their cards. Signing up later activates that existing user instead of creating a new one, so there's never a card to "connect" to a person after the fact. Cards assigned to a department rather than a person are unaffected.
+
+- **Cards and roles are separate.** Any user can hold cards, whatever their role, and sees My cards. The Cardholder role is for people whose only access is their own cards.
+- **A Cardholder's access comes from their cards.** Cardholders have no account-access setting. They see their own cards, in whatever accounts those cards belong to, and nothing else.
+- **Cards never move between people.** To give someone else a card, close the old one and issue a new one to the new person.
+
+Why: in EnCompass and WBP, admins could issue physical cards without creating the cardholder as a user. Many cardholders never registered, and those who did later needed their card "connected" to their new user, which led to requests to assign and unassign cards between users. Moving a physical card between people risks someone else knowing the PIN, breaks the chain of custody, and muddies the audit trail. Self-registered cardholders were also created at the Org level with a role that showed as blank, so admins at the Org Group level couldn't see them, editing them forced an Org assignment that would expose that Org's cards, and they couldn't later be given wider access. Users at the Customer level, a visible Cardholder role, and card-based access remove all of these.
+
+**Proposed:** issuing a card to a new person requires their name and email, so they can be invited.
+
 ## 2026-11-18 — Products are turned on per account
 
 **Decided.** The products are Cards (virtual cards, with physical cards as an option) and Payments (bill pay and supplier payments). Each account has one or both turned on, alongside its currency and credit line. "All accounts" shows everything turned on in any of the customer's accounts.

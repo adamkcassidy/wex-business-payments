@@ -11,4 +11,6 @@ The record of how WEX Business Payments looks, reads, and behaves, so screens (F
 | [statuses.md](statuses.md) | Every status: label, meaning, badge token |
 | [glossary.md](glossary.md) | Domain terms and definitions |
 
+For what the product is, who it's for, and how it's structured, start with [../product/foundation.md](../product/foundation.md).
+
 Entries are **Decided** (confirmed) or **Proposed** (suggested, not yet confirmed). Only decided entries are binding.
